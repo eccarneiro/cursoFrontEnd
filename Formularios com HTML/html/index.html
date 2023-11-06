@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h2>Formularios HTML</h2>
+    <!-- primeiro formulario -->
+    <!-- 2 Atributos do formulario -->
+    <form action="register.php" method="/*Get ou Post/*">
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="name">
+        </div>
+        <!-- 3 atributo name -->
+        <div>
+            <!-- Atributo label || ligando o input e a label por meio do atributo.-->
+            <label for="age">Idade:</label>
+            <input type="text" name="age" />
+        </div>
+        <!-- datas -->
+        <div>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="analista">Analista</option>
+                <option value="devops">DevOps</option>
+                <option value="powerBI">PowerBi</option>
+            </select>
+        </div>
+        <!-- Multiplas opçoes -->
+        <div>
+            <label for="tecnologias">Selecione as tecnologias:</label>
+            <select name="tecnologias" multiple>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="react">React Js</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+        <!-- textarea -->
+        <div>
+            <label for="comment">Fale mais sobre você:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!-- Atributo selected -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option> <!-- Atributo selected -->
+            </select>
+        </div>
+        <!-- fieldset e legend -->
+        <div>
+            <fieldset>
+                <legend>Preencha o restante das suas informações:</legend>
+                <label for="number">Telefone:</label>
+                <input type="text" name="number" required>
+                <label for="adress">Endereço:</label>
+                <input type="text" name="adress">
+                <!-- input para emails -->
+                <label for="email">E-mail:</label>
+                <input type="email" name="email">
+            </fieldset>
+        </div>
+        <!-- envio de arquivos -->
+        <div>
+            <label for="documents">Insira seu documento:</label>
+            <input type="file" name="image" required>
+        </div>
+        <!-- Datalist -->
+        <div>
+            <label for="app">Escolha uma opção para contato:</label>
+            <input type="text" list="apps" name="app">
+            <datalist id="apps">
+                <option value="Facebook">
+                <option value="Twitter">
+                <option value="Linkedin">
+                <option value="Telegram">
+                <option value="Instagram">
+            </datalist>
+        </div>
+        <!-- senha -->
+        <div>
+            <label for="password">Digite a sua senha:</label>
+            <input type="password" name="password">
+        </div>
+        <!-- radio button -->
+        <div>
+            <label for="ano_inicio">Selecione a data de inicio do Curso:</label>
+            <div class="radio">
+                <input type="radio" value="2024" name="ano_inicio">
+                <label for="2024">2024</label>
+                <input type="radio" value="2025" name="ano_inicio">
+                <label for="2025">2025</label>
+                <input type="radio" value="2026" name="ano_inicio">
+                <label for="2026">2026</label>
+            </div>
+        </div>
+        <!-- Resetar form -->
+        <input type="reset" value="Limpar">
+        <!-- Envio de form -->
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
