@@ -1,0 +1,170 @@
+/* reset */
+
+* {
+    /* * significa todos os elementos */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #432e66;
+}
+
+.form-body {
+    background-color: #432e665e;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    /* h1, h2, h3, h4, h5 significa todos os titulos */
+    color: #333;
+}
+
+p,
+label {
+    /* p, label significa todos os paragrafos */
+    color: #444;
+}
+
+
+input {
+    /* input significa todos os inputs */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    /* input[type="text"], input[type="number"], input[type="date"], input[type="file"] significa todos os inputs do tipo texto, numero, data e arquivo */
+    width: 400px;
+}
+
+.textarea {
+    /* textarea significa todos os textareas */
+    padding: 10px 5px;
+}
+
+/* page header */
+
+.header {
+    /* .header significa todos os elementos com a classe header */
+    height: 160px;
+    padding: 20px;
+    background-color: #432e66;
+    text-align: center;
+}
+
+.header h3 {
+    /* .header h3 significa todos os elementos h3 dentro da classe header */
+    color: #fff;
+    margin-top: 0;
+    font-size: 35px;
+}
+
+
+/* form container */
+
+.form-container {
+    /* .form-container significa todos os elementos com a classe form-container */
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+    border-radius: 5%;
+}
+
+/* form header */
+.form-header {
+    /* .form-header significa todos os elementos com a classe form-header */
+    border-bottom: 1px solid #dfdfdf;
+    height: 62px;
+    background-color: #432e665e;
+
+}
+
+.form-header p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form body */
+.form-body {
+    /* .form-body significa todos os elementos com a classe form-body */
+    padding: 100px;
+}
+
+.form-title {
+    /* .form-title significa todos os elementos com a classe form-title */
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    /* .form-body p significa todos os elementos p dentro da classe form-body */
+    margin-bottom: 20px;
+}
+
+.required-field {
+    /* .required-field significa todos os elementos com a classe required-field */
+    color: #d80835;
+}
+
+.box-input {
+    /* .box-input significa todos os elementos com a classe box-input */
+    margin-bottom: 30px;
+}
+
+.block {
+    /* .block significa todos os elementos com a classe block */
+    display: block;
+}
+
+.optional-box {
+    /* .optional-box significa todos os elementos com a classe optional-box */
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li {
+    /* .optional-list li significa todos os elementos li dentro da classe optional-list */
+    list-style: none;
+    margin: 10px;
+}
+
+.box-input p {
+    /* .box-input p significa todos os elementos p dentro da classe box-input */
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    /* .btn-submit significa todos os elementos com a classe btn-submit */
+    background-color: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    /* .btn-submit:hover significa todos os elementos com a classe btn-submit quando o mouse estiver em cima */
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7;
+}
