@@ -356,3 +356,70 @@ footer {
     font-weight: bold;
     margin: 20px 10px;
 }
+
+/* Responsividade */
+/* small laptops a partir ded 1000px */
+
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+/* celular 530px */
+
+@media (max-width: 576px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .main-banner p {
+        padding: 0 2rem;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .searchdomain-container h2 {
+        font-size: 25px;
+    }
+
+    .contact-container textarea {
+        width: 400px;
+        height: 150px;
+    }
+
+    .plan-prices-container {
+        flex-direction: column;
+    }
+
+
+    .logo {
+        width: 70px;
+        margin-left: 0;
+    }
+}
